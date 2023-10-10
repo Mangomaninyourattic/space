@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Space</title>
+    <style>
+        #navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 290px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgb(255, 255, 255);
+}
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#navbar li {
+    color:  rgb(255, 255, 255);
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+html, body {
+    min-width: 290px;
+    color: #4d4e53;
+    background-color:#001F3F;
+    line-height: 1.5;
+}
+footer {
+    position: fixed;
+    left: 1300px;
+    font-size: xx-small;
+    color:  rgb(255, 255, 255);
+}
+.Exploring_the_Cosmos {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color:  rgb(255, 255, 255);
+}
+.main-section header {
+    font-weight: bold;
+    font-size: 20px;
+    color:  rgb(255, 255, 255);
+}
+.main-section {
+    color:  rgb(255, 255, 255);
+}
+.starry-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #001F3F; /* Dark blue background */
+}
+.star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #FFFFFF; /* White stars */
+    border-radius: 50%;
+    animation: twinkling 1s infinite;
+}
+@keyframes twinkling {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: rgba(105, 105, 168, 0.515);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 600px) {
+    code {
+        font-size: 14px;
+        padding: 1px 2px;
+    }
+}
+    </style>
+</head>
+<body>
+<nav id="navbar">
+    <header class="Exploring_the_Cosmos">Exploring the Cosmos: A Journey Through Space and Beyond</header>
+    <ul>
+        <li>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Solar_System">Solar System</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Types_of_Planets">Types of Planets</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Dark_Matter_and_Dark_Energy">Dark Matter and Dark Energy</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Quantum_Entanglement_in_Space">Quantum Entanglement in Space</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Exoplanet_Atmospheres">Exoplanet Atmospheres</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Gravitational_Waves">Gravitational Waves</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#The_Great_Attractor">The Great Attractor</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Quantum_Computing_and_Space_Exploration"> Quantum Computing and Space Exploration</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Astrobiology">Astrobiology</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Time_Dilation">Time Dilation</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Neutron_Stars">Neutron Stars</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Hawking_Radiation">Hawking Radiation</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#The_Multiverse_Hypothesis">The Multiverse Hypothesis</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Cosmic_Microwave_Background">Cosmic Microwave Background</a>
+        </li>
+    </ul>
+</nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+            <p>Imagine a vast canvas stretching endlessly in all directions, adorned with galaxies, stars, and planets—the universe. At the heart of our cosmic neighborhood lies a blazing orb, the Sun, a colossal ball of energy that fuels life on our third celestial home, Earth. This intricate dance of celestial bodies, orchestrated by gravity, maintains the cosmic harmony within our solar system.</p>
+            <p>Gazing skyward, our closest companion, the Moon, illuminates the night. Its gravitational embrace shapes tides and has inspired poets and dreamers throughout history. As Earth twirls through the cosmos, we find ourselves part of a larger tapestry, a swirling galaxy named the Milky Way. Yet, beyond our galactic borders, billions of galaxies dot the cosmic landscape, each a collection of stars, gas, and mystery.</p>
+            <p>In our quest to unravel the secrets of the cosmos, humans have built telescopes to pierce the veil of space. From the humble optical telescope to the mighty Hubble Space Telescope, these instruments unveil the beauty and wonders of distant realms. Our species, propelled by curiosity and ambition, has left footprints on the Moon and sent robotic emissaries to explore the far reaches of our solar system.</p>
+            <code>console.log("Exploring the cosmos!");</code>
+            <ul>
+                <li><strong>Big Bang: </strong><span class="big-bang">The cosmic ballet commenced with this explosive genesis, giving birth to galaxies and cosmic structures that shape the universe as we know it today.</span></li>
+                <li><strong>Space Agencies: </strong><span class="space-agencies">Organizations like NASA and the European Space Agency propel humanity into the final frontier. They orchestrate missions to study distant planets, unravel the mysteries of dark matter, and explore the depths of our cosmic origins.</span></li>
+                <li><strong>The Universe: </strong><span class="universe">A boundless expanse that invites us to ponder our place within its grand tapestry. It encourages us to marvel at the celestial wonders that fuel our collective curiosity.</span></li>
+            </ul>
+        </article>
+    </section>
+    <section class="main-section" id="Solar_System">
+        <header>Solar System</header>
+        <article>
+            <p>At the heart of our cosmic neighborhood lies the solar system, a complex tapestry of celestial bodies orbiting the Sun. The Sun, a dynamic ball of plasma, dictates the rhythm of this cosmic dance through its magnetic fields, solar flares, and sunspots. These solar dynamics not only influence Earth but shape the entire solar environment.</p>
+            <p>Venturing beyond Earth, the planets reveal a diverse array of atmospheres and geological landscapes. From Venus with its thick cloud cover to Mars bearing the scars of ancient rivers and valleys, each planet offers a unique chapter in the story of our solar system's evolution. Moons, too, play a crucial role, with Earth's Moon showcasing the mark of countless impacts and the moons of gas giants like Jupiter and Saturn boasting intriguing mysteries, from magnetic fields to liquid methane lakes.</p>
+            <p>Journeying further out, the asteroid belt between Mars and Jupiter stands as a relic of the early solar system, while the Kuiper Belt, beyond Neptune, hosts dwarf planets like Pluto and Eris. The exploration of these regions provides insights into the formation and dynamics of our cosmic neighborhood.</p>
+            <p>The formation of the solar system itself is a tale of collapsing molecular clouds and protoplanetary disks. From the icy bodies of the Kuiper Belt to the mysteries of the Oort Cloud, the solar system's birth and evolution continue to captivate scientists and stargazers alike.</p>
+            <p>As we study meteorites, delve into planetary atmospheres, and push the boundaries of exploration, our understanding of the solar system's evolution deepens. This ongoing journey of discovery not only enriches our knowledge of our cosmic surroundings but also unveils the wonders and complexities inherent in the dance of celestial bodies within the solar system.</p>
+            <p class="small-text">*See definitions in the glossary</p>
+        </article>
+    </section>
+    <section class="main-section" id="Types_of_Planets">
+        <header>Types of Planets</header>
+        <article>
+            <ul>
+                <li class="List-1"><strong>Terrestrial Planets: </strong><span class="Terrestrial">The rocky, terrestrial planets are akin to cosmic geodes. Mercury, the closest to the Sun, bears the scars of intense solar radiation and extreme temperatures. Venus, shrouded in thick clouds, reflects sunlight with a golden hue. Earth, our blue gem, stands out with oceans and an atmosphere teeming with life. Mars, the "Red Planet," owes its rusty appearance to iron-rich dust covering its surface. These terrestrial worlds provide a glimpse into the diverse outcomes of planetary evolution.</span></li>
+                <li class="List-1"><strong>Gas Giants: </strong><span class="Gas">Jupiter, the largest planet, dons bands of colorful clouds, storms, and the iconic Great Red Spot—a tempest larger than Earth. Saturn, adorned with its spectacular ring system, presents a majestic, golden-hued spectacle. These gas giants showcase the dynamic interplay of atmospheric gases, revealing the beauty of swirling storms and intricate cloud patterns.</span></li>
+                <li class="List-1"><strong>Exoplanets: </strong><span class="Exo">Uranus and Neptune, the distant ice giants, exhibit a cool, cyan and azure palette. Methane in their atmospheres scatters sunlight, creating a serene, blue ambiance. These distant giants, with their frigid atmospheres and dynamic weather patterns, stand as enigmatic outliers in the solar system.</span></li>
+                <li class="List-1"><strong>Ice Giants:</strong><span class="Ice">Beyond our solar system, exoplanets paint a diverse canvas. "Hot Jupiters," orbiting close to their stars, often exhibit radiant hues due to extreme temperatures. "Super-Earths" and "Mini-Neptunes" showcase a spectrum of colors, reflecting their varied compositions. These distant worlds, glimpsed through telescopes and analyzed through spectroscopy, unveil the vast diversity of planetary landscapes beyond our cosmic neighborhood.</span></li>
+                <li class="List-1"><strong>Binary Planets and Rogue Planets: </strong><span class="Binary_and_Rogue">In unique cosmic scenarios, binary planets—pairs gravitationally bound to each other—offer a celestial ballet, their distinct colors harmonizing in a cosmic duet. Rogue planets, untethered from stars, drift through the cosmos in solitary splendor, their colors influenced by the cosmic environments they encounter.</span></li>
+            </ul>
+            <p>As we explore the colors of planets, we delve not only into their visual beauty but also into the diverse processes shaping their atmospheres, surfaces, and compositions. Each planetary hue tells a story of cosmic processes, from the fiery reds of iron-rich landscapes to the serene blues of methane-laden atmospheres, enriching our understanding of the kaleidoscopic wonders of the universe.</p>            
+        </article>
+    </section>
+    <section class="main-section" id="Dark_Matter_and_Dark_Energy">
+        <header>Dark Matter and Dark Energy</header>
+        <article>
+            <p>Dark matter and dark energy constitute the vast majority of the universe's mass and energy, yet they remain enigmatic and invisible to our current observational methods. Dark matter, thought to make up about 27% of the universe, exerts gravitational forces that influence the large-scale structure of the cosmos. Despite its pervasive presence, dark matter does not emit, absorb, or reflect light, making it nearly impossible to detect directly. Scientists have proposed various candidates for dark matter, such as Weakly Interacting Massive Particles (WIMPs), but as of now, none have been conclusively identified. The gravitational influence of dark matter becomes apparent in the rotation curves of galaxies and the gravitational lensing of light from distant objects, offering indirect but compelling evidence for its existence.</p>
+            <p>In contrast, dark energy, comprising roughly 68% of the universe, is believed to be responsible for the observed accelerated expansion of the cosmos. Unlike dark matter, which exerts attractive gravitational forces, dark energy seems to act as a repulsive force, driving galaxies away from each other at an accelerating pace. The nature of dark energy is even more elusive than dark matter, with the cosmological constant—first introduced by Einstein and later modified—as a leading candidate. Observations of distant supernovae, cosmic microwave background radiation, and large-scale galaxy distributions collectively support the presence of dark energy. Understanding these unseen cosmic forces is critical for refining our comprehension of the universe's fundamental properties and its ultimate fate.</p>
+            <code>// Study gravitational lensing effects</code>
+            <ul>
+                <li><strong>Large-Scale Structure: </strong><span>The cosmic web, a vast network of dark matter filaments, serves as the scaffold for the arrangement of galaxies on a grand scale, influencing the evolution of the cosmic landscape.</span></li>
+            </ul>
+        </article>
+    </section>
+    <section class="main-section" id="Quantum_Entanglement_in_Space">
+        <header>Quantum Entanglement in Space</header>
+        <article>
+            <p>Quantum entanglement, famously referred to by Einstein as "spooky action at a distance," is a quantum phenomenon where two or more particles become interconnected in such a way that the state of one particle instantaneously influences the state of the other, regardless of the distance between them. This mysterious connection challenges our classical intuitions about the separability of objects and has profound implications for our understanding of the fundamental nature of reality. In the context of space, quantum entanglement offers the potential for instantaneous communication over vast cosmic distances, sparking discussions about the development of quantum communication systems that could revolutionize interstellar communication.</p>
+            <ul>
+                <li><strong>Instantaneous Correlation: </strong><span>Changes in the quantum state of one entangled particle are mirrored instantaneously by its entangled partner, regardless of the spatial separation between them.</span></li>
+                <li><strong>Quantum Communication:</strong><span>The concept of entanglement-based communication systems, often referred to as quantum teleportation, raises the possibility of secure and ultra-fast communication between spacecraft and distant outposts in the cosmos.</span></li>
+                <li><strong>Quantum Entanglement and Black Holes:</strong><span>The study of entanglement entropy has provided new insights into the nature of black holes, suggesting a deep connection between quantum entanglement and the geometry of spacetime around these cosmic enigmas.</span></li>
+            </ul>
+            <p>Quantum entanglement has been experimentally verified on Earth, but extending these experiments to space could open up new frontiers in both quantum physics and space exploration. As we delve deeper into the quantum realm, the implications of entanglement for our understanding of space-time and information transmission are likely to lead to groundbreaking developments in both fields.</p>
+        </article>
+    </section>
+    <section class="main-section" id="Exoplanet_Atmospheres">
+        <header>Exoplanet Atmospheres</header>
+        <article>
+            <p>The study of exoplanet atmospheres has emerged as a forefront in the quest for extraterrestrial life. As telescopes and observational techniques have advanced, scientists have gained the ability to analyze the atmospheres of planets orbiting stars beyond our solar system. The composition and characteristics of these atmospheres offer vital clues about the potential habitability of exoplanets and the likelihood of hosting alien life. One key focus is the identification of biosignatures—chemical markers that could indicate the presence of life processes. For instance, the detection of certain gases like oxygen and methane could be indicative of biological activity, as these gases have a dynamic equilibrium that is often disrupted by living organisms.</p>
+            <p>Advancements in spectroscopy have played a pivotal role in the analysis of exoplanet atmospheres. By studying the absorption and emission of light at different wavelengths, scientists can discern the chemical makeup of distant atmospheres. This has led to the identification of a variety of exoplanet atmospheres with intriguing features, such as the presence of water vapor, clouds, and complex organic molecules. Additionally, the development of space missions like the James Webb Space Telescope promises to revolutionize our ability to characterize exoplanet atmospheres, providing more detailed insights into their composition and the potential for habitability.</p>
+            <code>// Analyze exoplanet atmospheric composition</code>
+        </article>
+    </section>
+    <section class="main-section" id="Gravitational_Waves">
+        <header>Gravitational Waves</header>
+        <article>
+            <p>Gravitational waves, first predicted by Albert Einstein in 1916 as a consequence of his theory of general relativity, represent the undulations in the fabric of spacetime caused by the acceleration of massive objects, such as merging black holes or neutron stars. Unlike electromagnetic waves, gravitational waves can traverse the universe unimpeded, carrying information about the cataclysmic events that generated them. The detection of gravitational waves ushered in a new era in astrophysics, enabling scientists to observe the cosmos in an entirely novel way. The Laser Interferometer Gravitational-Wave Observatory (LIGO) and Virgo collaborations achieved a groundbreaking milestone in 2015 by detecting the merger of two black holes, confirming Einstein's predictions and opening a new window into the</p>
+            <code>// Detect gravitational waves with LIGO and Virgo</code>
+        </article>
+    </section>
+    <section class="main-section" id="The_Great_Attractor">
+        <header>The Great Attractor</header>
+        <article>
+            <p>The Great Attractor stands as one of the most enigmatic and massive structures in the observable universe, exerting a mysterious gravitational pull on galaxies within its cosmic neighborhood. Discovered in the 1970s, this gravitational anomaly has challenged astronomers and astrophysicists, prompting questions about its nature and the forces driving the motion of galaxies towards it. Some theories propose that the Great Attractor could be a massive concentration of dark matter, while others speculate that it might be an extensive supercluster of galaxies hidden behind the Milky Way. Despite its pervasive influence, the exact identity and properties of the Great Attractor remain elusive, shrouding this cosmic anomaly in an aura of intrigue and driving ongoing efforts to unveil the secrets it holds about the large-scale structure of the universe.</p>
+            <code>// Investigate the gravitational influence of the Great Attractor</code>
+        </article>
+    </section>
+    <section class="main-section" id="Quantum_Computing_and_Space_Exploration">
+        <header>Quantum Computing and Space Exploration</header>
+        <article>
+            <p>Quantum Computing has emerged as a transformative technology with profound implications for space exploration. Its unique ability to process information using quantum bits, or qubits, allows for parallel computation on an unprecedented scale, promising to revolutionize tasks that are computationally intensive and currently beyond the capabilities of classical computers. In the realm of space exploration, quantum computing holds the potential to address complex challenges, from optimizing spacecraft trajectories and navigation in gravitational fields to simulating quantum systems encountered in space. As we delve into the era of quantum supremacy, the intersection of quantum computing and space exploration opens up new avenues for solving problems at the frontiers of astrophysics and aerospace engineering.</p>
+            <ul>
+                <li><strong>Quantum Algorithms for Optimization:</strong><span>Quantum computers excel at solving optimization problems, offering the potential to significantly enhance the efficiency of mission planning, trajectory optimization, and resource allocation in space exploration.</span></li>
+                <li><strong>Quantum Cryptography for Secure Communication: </strong><span>The development of quantum communication protocols ensures secure transmissions of sensitive information, safeguarding interplanetary communications from potential eavesdropping, a crucial aspect for secure space missions.</span></li>
+                <li><strong>Simulating Quantum Systems in Space:</strong><span>Quantum computers can simulate quantum systems with a level of accuracy and efficiency that classical computers struggle to achieve, providing insights into the behavior of particles and materials encountered in space environments.</span></li>
+            </ul>
+        </article>
+    </section>
+    <section class="main-section" id="Astrobiology">
+        <header>Astrobiology</header>
+        <article>
+            <p>Astrobiology, a multidisciplinary field at the intersection of biology, astronomy, and planetary science, pushes the boundaries of our understanding by exploring the possibility of life beyond Earth. Its central quest is to unravel the conditions and processes that give rise to life in the cosmos, extending our search for extraterrestrial organisms to the far reaches of the universe. Astrobiologists study extreme environments on Earth, from acidic hot springs to deep-sea hydrothermal vents, to draw insights into the potential habitability of other celestial bodies. The discovery of extremophiles—organisms thriving in extreme conditions—has expanded our perception of where life could exist and has fueled the exploration of moons, planets, and exoplanets with environments that might harbor life as we know it or even in forms yet unimagined. Astrobiology's quest not only addresses the fundamental question of whether life exists beyond Earth but also holds the promise of understanding the broader implications of life's existence in the grand tapestry of the cosmos.</p>
+        </article>
+    </section>
+    <section class="main-section" id="Time_Dilation">
+        <header>Time Dilation</header>
+        <article>
+            <p>Time dilation, a phenomenon predicted by Einstein's theory of relativity, introduces a fascinating concept where time is not an absolute constant but is instead relative to the observer's motion and gravitational field strength. According to special relativity, time appears to move slower for an observer in motion relative to a stationary observer. This effect becomes more pronounced as the speed of the moving observer approaches the speed of light. In the context of space travel, this means that astronauts on high-speed journeys experience time at a slower rate compared to those on Earth. This relativistic time dilation has practical implications, and it's a critical factor in the design and execution of space missions, especially those involving significant velocities.</p>
+            <p>General relativity further extends the concept of time dilation to gravitational fields. In regions of strong gravity, such as near massive celestial bodies like planets or black holes, time also moves at a slower rate. This gravitational time dilation has been experimentally confirmed through precision measurements with atomic clocks. Satellites in Earth's orbit, for instance, experience a slightly faster passage of time compared to clocks on the planet's surface due to the weaker gravitational field at their higher altitude. The interplay of motion-induced and gravitational time dilation underscores the profound nature of time as a dynamic and malleable dimension, challenging our intuitive understanding and enriching our comprehension of the universe's fabric.</p>
+        </article>
+    </section>
+    <section class="main-section" id="Neutron_Stars">
+        <header>Neutron Stars</header>
+        <article>
+            <p>Neutron stars, the remnants of massive stars that have undergone supernova explosions, are captivating celestial objects known for their mind-boggling densities. These stellar remnants pack the mass of about 1.4 times that of our Sun into a sphere roughly the size of a city, resulting in densities so extreme that a sugar-cube-sized amount of neutron-star material would weigh as much as a mountain on Earth. The force counteracting the gravitational collapse is neutron degeneracy pressure, where neutrons resist further compression due to the Pauli exclusion principle. This phenomenon creates an astrophysical laboratory for studying the behavior of matter under conditions impossible to replicate on Earth.</p>
+            <p>Pulsars, a specific type of neutron star, further enhance our understanding of these cosmic enigmas. Pulsars emit beams of radiation from their magnetic poles, and as the star rotates, these beams sweep across our line of sight, creating a pulsing effect akin to a cosmic lighthouse. Pulsars are remarkably precise celestial clocks, with some maintaining rotational periods in the range of milliseconds. The study of pulsars not only provides insights into the extreme physics of neutron stars but also offers a means to explore the nature of space-time, as their pulses can be used to detect gravitational waves, providing a unique intersection between the worlds of astrophysics and general relativity.</p>
+        </article>
+    </section>
+    <section class="main-section" id="Hawking_Radiation">
+        <header>Hawking Radiation</header>
+        <article>
+            <p>Hawking radiation, a groundbreaking theoretical prediction by physicist Stephen Hawking, unveils a subtle yet profound phenomenon associated with black holes. According to quantum field theory, particles and antiparticles continuously emerge and annihilate near the event horizon of a black hole. Occasionally, one particle escapes while its counterpart falls into the black hole, resulting in the slow but steady emission of radiation. This process, known as Hawking radiation, challenges the classical notion that nothing can escape a black hole's gravitational grasp. Over immense periods, this radiation leads to the gradual evaporation of black holes, providing a theoretical mechanism for their eventual disappearance. Although Hawking radiation has yet to be directly observed, its implications for the fate and thermodynamics of black holes have reshaped our understanding of these cosmic entities and continue to inspire research at the intersection of quantum mechanics and general relativity.</p>
+        </article>
+    </section>
+    <section class="main-section" id="The_Multiverse_Hypothesis">
+        <header>The Multiverse Hypothesis</header>
+        <article>
+            <ul>
+                <li><strong>Parallel Realities: </strong><span>The multiverse hypothesis proposes the existence of multiple, potentially infinite, universes beyond our observable cosmic horizon, each with its own set of physical laws and constants.</span></li>
+                <li><strong>Bubble Universes: </strong><span>One version of the multiverse theory suggests the creation of "bubble universes" during cosmic inflation, where different regions of space undergo independent expansion, leading to distinct universes within an overarching multiverse.</span></li>
+                <li><strong>String Theory and Extra Dimensions: </strong><span>The multiverse concept finds support in certain formulations of string theory, where the existence of extra dimensions allows for a landscape of diverse vacuum states, each representing a different universe within the multiverse.</span></li>
+            </ul>
+        </article>
+    </section>
+    <section class="main-section" id="Cosmic_Microwave_Background">
+        <header>Cosmic Microwave Background</header>
+        <article>
+            <p>The Cosmic Microwave Background (CMB) stands as an ancient echo of the universe's explosive birth during the Big Bang. Approximately 13.8 billion years ago, the universe underwent a rapid expansion from an extremely hot and dense state, eventually cooling and allowing photons to travel freely. The CMB represents the faint glow of these primordial photons, now significantly redshifted to microwave frequencies due to the universe's expansion. Discovered accidentally in 1965 by Arno Penzias and Robert Wilson, the CMB provides a snapshot of the universe when it was just 380,000 years old, offering invaluable insights into its early conditions.</p>
+            <p>Studying the CMB has become a cornerstone of cosmology, enabling scientists to address fundamental questions about the cosmos. Variations in the CMB's temperature across the sky provide a wealth of information about the universe's composition, geometry, and evolution. Precise measurements of these temperature fluctuations have led to the development of the Lambda-CDM model, describing a universe dominated by dark energy, dark matter, and ordinary matter. The CMB's detailed patterns also support the theory of cosmic inflation, explaining the large-scale homogeneity and isotropy observed in the universe today. As a cosmic time capsule, the CMB continues to be a rich source of data, guiding our understanding of the universe's origins and evolution.</p>
+        </article>
+    </section>
+  </main>
+  <section class="attributes">
+    <div class="starry-background">
+        <div class="star" style="top: 25%; left: 46%;"></div>
+        <div class="star" style="top: 30%; left: 74%;"></div>
+        <div class="star" style="top: 48%; left: 10%;"></div>
+        <div class="star" style="top: 41%; left: 75%;"></div>
+        <div class="star" style="top: 64%; left: 65%;"></div>
+        <div class="star" style="top: 76%; left: 47%;"></div>
+        <div class="star" style="top: 84%; left: 0%;"></div>
+        <div class="star" style="top: 98%; left: 26%;"></div>
+
+        <div class="star" style="top: 94%; left: 41%;"></div>
+        <div class="star" style="top: 88%; left: 75%;"></div>
+        <div class="star" style="top: 77%; left: 10%;"></div>
+        <div class="star" style="top: 66%; left: 78%;"></div>
+        <div class="star" style="top: 51%; left: 61%;"></div>
+        <div class="star" style="top: 42%; left: 43%;"></div>
+        <div class="star" style="top: 30%; left: 0%;"></div>
+        <div class="star" style="top: 21%; left: 22%;"></div>
+
+        <div class="star" style="top: 1%; left: 100%;"></div>
+        <div class="star" style="top: 2%; left: 90%;"></div>
+        <div class="star" style="top: 3%; left: 80%;"></div>
+        <div class="star" style="top: 4%; left: 70%;"></div>
+        <div class="star" style="top: 5%; left: 60%;"></div>
+        <div class="star" style="top: 6%; left: 50%;"></div>
+        <div class="star" style="top: 7%; left: 40%;"></div>
+        <div class="star" style="top: 8%; left: 30%;"></div>
+
+        <div class="star" style="top: 11%; left: 11%;"></div>
+        <div class="star" style="top: 24%; left: 24%;"></div>
+        <div class="star" style="top: 42%; left: 27%;"></div>
+        <div class="star" style="top: 60%; left: 22%;"></div>
+        <div class="star" style="top: 62%; left: 28%;"></div>
+        <div class="star" style="top: 79%; left: 45%;"></div>
+        <div class="star" style="top: 25%; left: 100%;"></div>
+        <div class="star" style="top: 9%; left: 78%;"></div>
+
+        <div class="star" style="top: 2%; left: 100%;"></div>
+        <div class="star" style="top: 89%; left: 71%;"></div>
+        <div class="star" style="top: 44%; left: 10%;"></div>
+        <div class="star" style="top: 52%; left: 72%;"></div>
+        <div class="star" style="top: 62%; left: 63%;"></div>
+        <div class="star" style="top: 73%; left: 45%;"></div>
+        <div class="star" style="top: 8%; left: 0%;"></div>
+        <div class="star" style="top: 9%; left: 24%;"></div>
+
+        <div class="star" style="top: 90%; left: 80%;"></div>
+        <div class="star" style="top: 80%; left: 95%;"></div>
+        <div class="star" style="top: 70%; left: 70%;"></div>
+        <div class="star" style="top: 60%; left: 90%;"></div>
+        <div class="star" style="top: 50%; left: 88%;"></div>
+        <div class="star" style="top: 40%; left: 85%;"></div>
+        <div class="star" style="top: 30%; left: 82%;"></div>
+        <div class="star" style="top: 20%; left: 80%;"></div>
+
+        <div class="star" style="top: 90%; left: 90%;"></div>
+        <div class="star" style="top: 80%; left: 81%;"></div>
+        <div class="star" style="top: 70%; left: 62%;"></div>
+        <div class="star" style="top: 60%; left: 23%;"></div>
+        <div class="star" style="top: 50%; left: 44%;"></div>
+        <div class="star" style="top: 40%; left: 55%;"></div>
+        <div class="star" style="top: 30%; left: 76%;"></div>
+        <div class="star" style="top: 20%; left: 17%;"></div>
+
+        <div class="star" style="top: 10%; left: 90%;"></div>
+        <div class="star" style="top: 20%; left: 100%;"></div>
+        <div class="star" style="top: 30%; left: 40%;"></div>
+        <div class="star" style="top: 40%; left: 70%;"></div>
+        <div class="star" style="top: 50%; left: 60%;"></div>
+        <div class="star" style="top: 60%; left: 40%;"></div>
+        <div class="star" style="top: 70%; left: 0%;"></div>
+        <div class="star" style="top: 80%; left: 20%;"></div>
+
+        <div class="star" style="top: 90%; left: 40%;"></div>
+        <div class="star" style="top: 80%; left: 70%;"></div>
+        <div class="star" style="top: 70%; left: 10%;"></div>
+        <div class="star" style="top: 60%; left: 70%;"></div>
+        <div class="star" style="top: 50%; left: 60%;"></div>
+        <div class="star" style="top: 40%; left: 40%;"></div>
+        <div class="star" style="top: 30%; left: 0%;"></div>
+        <div class="star" style="top: 20%; left: 20%;"></div>
+
+        <div class="star" style="top: 91%; left: 99%;"></div>
+        <div class="star" style="top: 92%; left: 98%;"></div>
+        <div class="star" style="top: 20%; left: 97%;"></div>
+        <div class="star" style="top: 43%; left: 96%;"></div>
+        <div class="star" style="top: 58%; left: 95%;"></div>
+        <div class="star" style="top: 61%; left: 94%;"></div>
+        <div class="star" style="top: 19%; left: 93%;"></div>
+        <div class="star" style="top: 59%; left: 92%;"></div>
+
+        <div class="star" style="top: 1%; left: 16%;"></div>
+        <div class="star" style="top: 2%; left: 24%;"></div>
+        <div class="star" style="top: 3%; left: 30%;"></div>
+        <div class="star" style="top: 4%; left: 45%;"></div>
+        <div class="star" style="top: 5%; left: 55%;"></div>
+        <div class="star" style="top: 6%; left: 67%;"></div>
+        <div class="star" style="top: 7%; left: 7%;"></div>
+        <div class="star" style="top: 9%; left: 86%;"></div>
+
+        <div class="star" style="top: 1%; left: 16%;"></div>
+        <div class="star" style="top: 1%; left: 24%;"></div>
+        <div class="star" style="top: 1%; left: 30%;"></div>
+        <div class="star" style="top: 1%; left: 45%;"></div>
+        <div class="star" style="top: 1%; left: 55%;"></div>
+        <div class="star" style="top: 1%; left: 67%;"></div>
+        <div class="star" style="top: 1%; left: 7%;"></div>
+        <div class="star" style="top: 1%; left: 86%;"></div>
+
+        <div class="star" style="top: 16%; left: 1%;"></div>
+        <div class="star" style="top: 24%; left: 2%;"></div>
+        <div class="star" style="top: 30%; left: 3%;"></div>
+        <div class="star" style="top: 45%; left: 4%;"></div>
+        <div class="star" style="top: 55%; left: 5%;"></div>
+        <div class="star" style="top: 67%; left: 6%;"></div>
+        <div class="star" style="top: 7%; left: 7%;"></div>
+        <div class="star" style="top: 86%; left: 8%;"></div>
+
+        <div class="star" style="top: 250%; left: 46%;"></div>
+        <div class="star" style="top: 300%; left: 74%;"></div>
+        <div class="star" style="top: 480%; left: 10%;"></div>
+        <div class="star" style="top: 410%; left: 75%;"></div>
+        <div class="star" style="top: 640%; left: 65%;"></div>
+        <div class="star" style="top: 760%; left: 47%;"></div>
+        <div class="star" style="top: 840%; left: 0%;"></div>
+        <div class="star" style="top: 980%; left: 26%;"></div>
+
+        <div class="star" style="top: 940%; left: 41%;"></div>
+        <div class="star" style="top: 880%; left: 75%;"></div>
+        <div class="star" style="top: 770%; left: 10%;"></div>
+        <div class="star" style="top: 660%; left: 78%;"></div>
+        <div class="star" style="top: 510%; left: 61%;"></div>
+        <div class="star" style="top: 420%; left: 43%;"></div>
+        <div class="star" style="top: 300%; left: 0%;"></div>
+        <div class="star" style="top: 210%; left: 22%;"></div>
+
+        <div class="star" style="top: 10%; left: 100%;"></div>
+        <div class="star" style="top: 20%; left: 90%;"></div>
+        <div class="star" style="top: 30%; left: 80%;"></div>
+        <div class="star" style="top: 40%; left: 70%;"></div>
+        <div class="star" style="top: 50%; left: 60%;"></div>
+        <div class="star" style="top: 60%; left: 50%;"></div>
+        <div class="star" style="top: 70%; left: 40%;"></div>
+        <div class="star" style="top: 80%; left: 30%;"></div>
+
+        <div class="star" style="top: 110%; left: 11%;"></div>
+        <div class="star" style="top: 240%; left: 24%;"></div>
+        <div class="star" style="top: 420%; left: 27%;"></div>
+        <div class="star" style="top: 600%; left: 22%;"></div>
+        <div class="star" style="top: 620%; left: 28%;"></div>
+        <div class="star" style="top: 790%; left: 45%;"></div>
+        <div class="star" style="top: 250%; left: 100%;"></div>
+        <div class="star" style="top: 90%; left: 78%;"></div>
+
+        <div class="star" style="top: 20%; left: 100%;"></div>
+        <div class="star" style="top: 890%; left: 71%;"></div>
+        <div class="star" style="top: 440%; left: 10%;"></div>
+        <div class="star" style="top: 520%; left: 72%;"></div>
+        <div class="star" style="top: 620%; left: 63%;"></div>
+        <div class="star" style="top: 730%; left: 45%;"></div>
+        <div class="star" style="top: 80%; left: 0%;"></div>
+        <div class="star" style="top: 90%; left: 24%;"></div>
+
+        <div class="star" style="top: 900%; left: 80%;"></div>
+        <div class="star" style="top: 800%; left: 95%;"></div>
+        <div class="star" style="top: 700%; left: 70%;"></div>
+        <div class="star" style="top: 600%; left: 90%;"></div>
+        <div class="star" style="top: 500%; left: 88%;"></div>
+        <div class="star" style="top: 400%; left: 85%;"></div>
+        <div class="star" style="top: 300%; left: 82%;"></div>
+        <div class="star" style="top: 200%; left: 80%;"></div>
+
+        <div class="star" style="top: 900%; left: 90%;"></div>
+        <div class="star" style="top: 800%; left: 81%;"></div>
+        <div class="star" style="top: 700%; left: 62%;"></div>
+        <div class="star" style="top: 600%; left: 23%;"></div>
+        <div class="star" style="top: 500%; left: 44%;"></div>
+        <div class="star" style="top: 400%; left: 55%;"></div>
+        <div class="star" style="top: 300%; left: 76%;"></div>
+        <div class="star" style="top: 200%; left: 17%;"></div>
+
+        <div class="star" style="top: 100%; left: 90%;"></div>
+        <div class="star" style="top: 200%; left: 100%;"></div>
+        <div class="star" style="top: 300%; left: 40%;"></div>
+        <div class="star" style="top: 400%; left: 70%;"></div>
+        <div class="star" style="top: 500%; left: 60%;"></div>
+        <div class="star" style="top: 600%; left: 40%;"></div>
+        <div class="star" style="top: 700%; left: 0%;"></div>
+        <div class="star" style="top: 800%; left: 20%;"></div>
+
+        <div class="star" style="top: 900%; left: 40%;"></div>
+        <div class="star" style="top: 800%; left: 70%;"></div>
+        <div class="star" style="top: 700%; left: 10%;"></div>
+        <div class="star" style="top: 600%; left: 70%;"></div>
+        <div class="star" style="top: 500%; left: 60%;"></div>
+        <div class="star" style="top: 400%; left: 40%;"></div>
+        <div class="star" style="top: 300%; left: 0%;"></div>
+        <div class="star" style="top: 200%; left: 20%;"></div>
+
+        <div class="star" style="top: 910%; left: 99%;"></div>
+        <div class="star" style="top: 920%; left: 98%;"></div>
+        <div class="star" style="top: 200%; left: 97%;"></div>
+        <div class="star" style="top: 430%; left: 96%;"></div>
+        <div class="star" style="top: 580%; left: 95%;"></div>
+        <div class="star" style="top: 610%; left: 94%;"></div>
+        <div class="star" style="top: 190%; left: 93%;"></div>
+        <div class="star" style="top: 590%; left: 92%;"></div>
+
+        <div class="star" style="top: 10%; left: 16%;"></div>
+        <div class="star" style="top: 20%; left: 24%;"></div>
+        <div class="star" style="top: 30%; left: 30%;"></div>
+        <div class="star" style="top: 40%; left: 45%;"></div>
+        <div class="star" style="top: 50%; left: 55%;"></div>
+        <div class="star" style="top: 60%; left: 67%;"></div>
+        <div class="star" style="top: 70%; left: 7%;"></div>
+        <div class="star" style="top: 90%; left: 86%;"></div>
+
+        <div class="star" style="top: 100%; left: 16%;"></div>
+        <div class="star" style="top: 100%; left: 24%;"></div>
+        <div class="star" style="top: 100%; left: 30%;"></div>
+        <div class="star" style="top: 100%; left: 45%;"></div>
+        <div class="star" style="top: 100%; left: 55%;"></div>
+        <div class="star" style="top: 100%; left: 67%;"></div>
+        <div class="star" style="top: 100%; left: 7%;"></div>
+        <div class="star" style="top: 100%; left: 86%;"></div>
+
+        <div class="star" style="top: 160%; left: 1%;"></div>
+        <div class="star" style="top: 240%; left: 2%;"></div>
+        <div class="star" style="top: 300%; left: 3%;"></div>
+        <div class="star" style="top: 450%; left: 4%;"></div>
+        <div class="star" style="top: 550%; left: 5%;"></div>
+        <div class="star" style="top: 670%; left: 6%;"></div>
+        <div class="star" style="top: 700%; left: 7%;"></div>
+        <div class="star" style="top: 860%; left: 8%;"></div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; MangoManInYourAttic</p>
+  </footer>
+</body>
+</html>
